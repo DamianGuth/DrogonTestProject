@@ -1,6 +1,5 @@
 # Building
-- Create a directory called 'build'
-- Navigate to the directory
+- Navigate to the 'Build' directory
 - Run 'cmake ..'' to generate the cmake file
 - Run 'make' to build the project
 
