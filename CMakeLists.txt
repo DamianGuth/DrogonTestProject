@@ -1,6 +1,6 @@
 cmake_minimum_required (VERSION 3.5)
 project(drogonTestProject CXX)
-
+set(CMAKE_BUILD_TYPE Debug)
 include(CheckIncludeFileCXX)
 
 check_include_file_cxx(any HAS_ANY)
