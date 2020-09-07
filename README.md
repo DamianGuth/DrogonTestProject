@@ -49,6 +49,8 @@ to the top of the file right below the project name line. It should look similar
 >
 >include(CheckIncludeFileCXX)
 
+(You can also use "set(CMAKE_BUILD_TYPE RelWithDebInfo)" instead. This will optimize the code similar to release versions but will still include debug symbols.)
+
 Your build will now include debug symbols the next time you run **make**.
 
 ### When using VSCode for debugging
