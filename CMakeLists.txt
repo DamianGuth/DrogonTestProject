@@ -57,3 +57,8 @@ target_sources(${PROJECT_NAME} PRIVATE ${SRC_DIR} ${CTL_SRC} ${FILTER_SRC} ${VIE
 ################################
 # uncomment the following line for dynamically loading views 
 #set_property(TARGET ${PROJECT_NAME} PROPERTY ENABLE_EXPORTS ON)
+
+# Copy the html pages to the build directory so they can be used by the application.
+add_custom_command(TARGET ${PROJECT_NAME} POST_BUILD
+                   COMMAND ${CMAKE_COMMAND} -E copy_directory
+                       ${CMAKE_SOURCE_DIR}/htmlpages $<TARGET_FILE_DIR:${PROJECT_NAME}>/htmlpages)
